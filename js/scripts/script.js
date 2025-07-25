@@ -1,6 +1,5 @@
-// GitHub API URLs for your repositories
-const githubApiUrlPython = 'https://api.github.com/users/Kiran-DA/repos';
-const githubApiUrlPowerBI = 'https://api.github.com/users/Kiran-DA/repos';
+// GitHub API URL for Kiran-DA repositories
+const githubApiUrl = 'https://api.github.com/users/Kiran-DA/repos';
 
 // Function to fetch GitHub repositories and display them
 function fetchRepos(apiUrl, targetElementId) {
@@ -29,8 +28,7 @@ function fetchRepos(apiUrl, targetElementId) {
         .catch(error => console.error('Error fetching repositories:', error));
 }
 
-// Fetch Python and Power BI repositories on page load
+// Fetch repositories on page load
 window.onload = function () {
-    fetchRepos(githubApiUrlPython, 'python-repo-list');
-    fetchRepos(githubApiUrlPowerBI, 'powerbi-repo-list');
+    fetchRepos(githubApiUrl, 'python-repo-list');  // This will display repos from Kiran-DA in Python section as well
 };
