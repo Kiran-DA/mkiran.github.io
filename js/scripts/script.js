@@ -79,8 +79,6 @@ function toggleRepos(type) {
 
 // Fetch repositories when the page loads
 window.onload = function () {
-    fetchRepos(githubApiUrl);
-
     // Default to show Python Repositories
     toggleRepos('python');
 
@@ -93,3 +91,4 @@ window.onload = function () {
         toggleRepos('powerbi');
     });
 };
+
