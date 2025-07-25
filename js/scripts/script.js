@@ -28,7 +28,7 @@ function fetchRepos(apiUrl) {
                                 <h5 class="card-title">${repo.name}</h5>
                                 <p class="card-text">${repo.description || 'No description available.'}</p>
                                 <p><strong>Visibility:</strong> ${repo.private ? 'Private' : 'Public'}</p>
-                                <a href="${repo.html_url}" class="btn btn-primary" target="_blank">View on GitHub</a>
+                                <a href="https://github.com/Kiran-DA/Python.git" class="btn btn-primary" target="_blank">View on GitHub</a>
                             </div>
                         </div>
                     </div>
