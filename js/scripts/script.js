@@ -9,14 +9,16 @@ function fetchRepos(apiUrl) {
             const pythonRepoList = document.getElementById('python-repo-list');
             const powerbiRepoList = document.getElementById('powerbi-repo-list');
 
+            // Filter Python Repositories based on language
             const pythonRepos = data.filter(repo => repo.language === "Python");
+            // Filter Power BI Repositories based on name (or other criteria)
             const powerbiRepos = data.filter(repo => repo.name.toLowerCase().includes('powerbi'));
 
             // Clear the current content
             pythonRepoList.innerHTML = '';
             powerbiRepoList.innerHTML = '';
 
-            // Add Python Repos
+            // Display Python Repositories
             pythonRepos.forEach(repo => {
                 const repoCard = `
                     <div class="col-md-4">
@@ -25,6 +27,7 @@ function fetchRepos(apiUrl) {
                             <div class="card-body">
                                 <h5 class="card-title">${repo.name}</h5>
                                 <p class="card-text">${repo.description || 'No description available.'}</p>
+                                <p><strong>Visibility:</strong> ${repo.private ? 'Private' : 'Public'}</p>
                                 <a href="${repo.html_url}" class="btn btn-primary" target="_blank">View on GitHub</a>
                             </div>
                         </div>
@@ -33,7 +36,7 @@ function fetchRepos(apiUrl) {
                 pythonRepoList.innerHTML += repoCard;
             });
 
-            // Add Power BI Repos
+            // Display Power BI Repositories
             powerbiRepos.forEach(repo => {
                 const repoCard = `
                     <div class="col-md-4">
@@ -42,6 +45,7 @@ function fetchRepos(apiUrl) {
                             <div class="card-body">
                                 <h5 class="card-title">${repo.name}</h5>
                                 <p class="card-text">${repo.description || 'No description available.'}</p>
+                                <p><strong>Visibility:</strong> ${repo.private ? 'Private' : 'Public'}</p>
                                 <a href="${repo.html_url}" class="btn btn-primary" target="_blank">View on GitHub</a>
                             </div>
                         </div>
