@@ -1,0 +1,36 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: #007bff;
+}
+
+footer {
+    background: #343a40;
+}
+
+/* Section Title */
+h2 {
+    color: #007bff;
+}
+
+/* Repository Card Styling */
+.repo-card {
+    margin-bottom: 20px;
+}
+
+.repo-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.repo-card a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.repo-card a:hover {
+    text-decoration: underline;
+}
