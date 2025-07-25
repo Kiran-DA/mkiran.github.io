@@ -34,3 +34,9 @@ h2 {
 .repo-card a:hover {
     text-decoration: underline;
 }
+
+/* Active Button Styling */
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff !important;
+}
