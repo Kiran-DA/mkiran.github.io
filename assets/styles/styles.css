@@ -10,8 +10,11 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-image: url('Images/WBG.jpg'); /* Match the navbar background with hero */
+    background-image: url('Images/WBG.jpg'); /* Background image same as hero section */
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: none; /* Remove any box shadow for a clean look */
 }
 
 .navbar-nav {
@@ -31,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff; /* White text color for navbar items */
+    color: white !important; /* White text color for navbar items */
     font-weight: bold;
     text-decoration: none;
 }
