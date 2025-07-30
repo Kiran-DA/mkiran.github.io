@@ -1,51 +1,78 @@
-/* General Body Styling */
+/* General Body Styling 
 body {
-    background-image: url('Images/WBG.jpg'); /* Path to background image */
+    background-image: url('Images/WBG.jpg'); /* Path to background image 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     margin: 0;
     font-family: Arial, sans-serif;
-}
+} */
 
 /* Navbar Styling */
 .navbar {
-    background-image: url('Images/WBG.jpg'); /* Background image same as hero section */
+    background: transparent !important;  /* Ensure the navbar is transparent */
+    position: absolute;  /* To allow the background image to show behind */
+    width: 100%;
+    z-index: 1000;  /* Ensure it stays on top of other content */
+}
+
+/* Adjust the navbar items */
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;  /* Space out navbar items */
+    width: 100%;
+}
+
+/* Adjust individual navbar items */
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Make navbar link images responsive */
+.nav-link img {
+    max-width: 40px;  /* Adjust size of the icons */
+    height: auto;
+}
+
+/* Optional: Change the navbar text color */
+.navbar-brand, .nav-link {
+    color: white !important; /* White text for visibility */
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+    color: #f0ad4e !important; /* Add a hover effect on navbar links */
+}
+
+/* Media Queries for small screens */
+@media (max-width: 767px) {
+    .navbar-nav {
+        justify-content: center;  /* Center navbar items on small screens */
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;  /* Adjust font size of the brand name */
+    }
+
+    .nav-link img {
+        max-width: 30px;  /* Smaller icon size for mobile */
+    }
+}
+
+/* Body Background Image */
+body {
+    background-image: url('Images/WBG.jpg'); /* Path to your background image */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    box-shadow: none; /* Remove any box shadow for a clean look */
+    padding-top: 60px; /* Optional: Space for fixed navbar */
 }
 
-.navbar-nav {
-    display: flex; /* Align navbar items horizontally */
-    justify-content: flex-start; /* Align items to the left */
-    width: auto; /* Allow navbar width to auto adjust */
+/* Optional: Add some padding to the body content */
+.container {
+    padding: 20px;
 }
-
-/* Align individual navbar items */
-.nav-item {
-    display: flex;
-    align-items: center; /* Aligns image and text vertically */
-}
-
-/* Navbar Link Styling */
-.nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white !important; /* White text color for navbar items */
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Image in Navbar Links */
-.nav-link img {
-    max-width: 75px;  /* Control the image size */
-    height: auto;
-    margin-right: 10px;  /* Space between the image and text */
-}
-
 
 /* Hero Section Styling */
 .hero {
