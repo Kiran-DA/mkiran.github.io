@@ -15,35 +15,52 @@
 
     <style>
         /* Ensure proper alignment for navbar items */
-        .navbar-nav {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
+/* Navbar styling */
+.navbar-nav {
+    display: flex;
+    justify-content: space-between; /* Space between navbar items */
+    width: 100%;
+}
 
-        /* Align navbar buttons */
-        .nav-item {
-            display: flex;
-            align-items: center;
-        }
+/* Align individual navbar items */
+.nav-item {
+    display: flex;
+    align-items: center; /* Ensures the items (e.g., images) are vertically aligned */
+}
 
-        /* Styling for the images inside the nav items */
-        .nav-link img {
-            max-width: 40px; /* Size of the icons */
-            height: auto;
-        }
+/* Adjust navbar links and icons */
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        /* Ensure navbar is responsive */
-        @media (max-width: 70px) {
-            .navbar-nav {
-                justify-content: left;
-            }
+/* Image styling in navbar links */
+.nav-link img {
+    max-width: 30px;  /* Size of the icons (adjust as needed) */
+    height: auto;
+    margin-right: 10px;  /* Optional: Space between the image and text */
+}
 
-            .nav-item {
-                margin: 0px; /* Add some spacing for smaller screens */
-            }
-        }
-    </style>
+/* Navbar items on mobile devices */
+@media (max-width: 767px) {
+    .navbar-nav {
+        justify-content: center;  /* Center navbar items on smaller screens */
+    }
+
+    .nav-item {
+        margin: 0 10px; /* Add spacing between items on mobile */
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem; /* Adjust the brand logo size for small screens */
+    }
+
+    .nav-link img {
+        max-width: 25px; /* Adjust icon size for mobile */
+    }
+}
+</style>
 </head>
 
 <body>
