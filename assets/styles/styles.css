@@ -49,6 +49,7 @@ body {
     }
 
     .navbar-brand {
+        background-image: url('Images/WBG.jpg');
         font-size: 1.5rem; /* Adjust brand logo size on mobile */
     }
 
