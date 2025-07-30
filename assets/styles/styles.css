@@ -1,6 +1,8 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
+    background-image: url("Images/WBG.jpg");
+    background-size: cover;
 }
 
 .hero {
