@@ -1,44 +1,128 @@
-/* Global Styles */
+/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("Images/WBG.jpg");
+    background-image: url('Images/WBG.jpg'); /* Background image */
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Navbar Styling */
+.navbar-nav {
+    display: flex; /* Align navbar items horizontally */
+    justify-content: flex-start; /* Align items to the left */
+    width: auto; /* Allow navbar width to auto adjust */
+}
+
+/* Align individual navbar items */
+.nav-item {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+}
+
+/* Navbar Link Styling */
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000; /* Default text color */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Image in Navbar Links */
+.nav-link img {
+    max-width: 75px;  /* Control the image size */
+    height: auto;
+    margin-right: 10px;  /* Space between the image and text */
+}
+
+/* Navbar Items on Mobile */
+@media (max-width: 767px) {
+    .navbar-nav {
+        justify-content: center;  /* Center navbar items on mobile */
+    }
+
+    .nav-item {
+        margin: 0 10px; /* Add space between navbar items */
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem; /* Adjust brand logo size on mobile */
+    }
+
+    .nav-link img {
+        max-width: 25px; /* Adjust image size for mobile */
+    }
+}
+
+/* Hero Section Styling */
 .hero {
-    background: #007bff;
+    background-color: #007bff; /* Primary blue background */
+    color: white;
+    text-align: center;
+    padding: 60px 0; /* Padding for top and bottom */
 }
 
-footer {
-    background: #343a40;
-}
-
-/* Section Title */
-h2 {
-    color: #007bff;
-}
-
-/* Repository Card Styling */
-.repo-card {
+/* Hero Section Header */
+.hero h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.repo-card img {
-    max-width: 100%;
-    height: auto;
+/* Hero Section Paragraph */
+.hero p {
+    font-size: 1.2rem;
 }
 
-.repo-card a {
+/* Repositories Section */
+#repositories {
+    padding: 60px 0;
+}
+
+/* Section Titles */
+.repo-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Repository Descriptions */
+.repo-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Repository Links */
+.repo-section a {
     text-decoration: none;
     color: #007bff;
+    font-weight: bold;
 }
 
-.repo-card a:hover {
+.repo-section a:hover {
     text-decoration: underline;
 }
 
-/* Active Button Styling */
-.nav-link.active {
-    font-weight: bold;
-    color: #007bff !important;
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design for Repositories Section */
+@media (max-width: 767px) {
+    .repo-section p {
+        font-size: 1rem; /* Adjust paragraph font size on mobile */
+    }
+
+    .repo-section h2 {
+        font-size: 1.5rem; /* Adjust section title font size */
+    }
 }
