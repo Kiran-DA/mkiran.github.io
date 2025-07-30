@@ -10,6 +10,7 @@ body {
 
 /* Navbar Styling */
 .navbar-nav {
+    background-image: url('Images/WBG.jpg');
     display: flex; /* Align navbar items horizontally */
     justify-content: flex-start; /* Align items to the left */
     width: auto; /* Allow navbar width to auto adjust */
