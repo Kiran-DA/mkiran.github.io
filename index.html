@@ -12,6 +12,38 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/styles/styles.css">
+
+    <style>
+        /* Ensure proper alignment for navbar items */
+        .navbar-nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        /* Align navbar buttons */
+        .nav-item {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling for the images inside the nav items */
+        .nav-link img {
+            max-width: 40px; /* Size of the icons */
+            height: auto;
+        }
+
+        /* Ensure navbar is responsive */
+        @media (max-width: 767px) {
+            .navbar-nav {
+                justify-content: center;
+            }
+
+            .nav-item {
+                margin: 0 10px; /* Add some spacing for smaller screens */
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -24,14 +56,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Python Button -->
                     <li class="nav-item">
                         <a class="nav-link active" id="python-btn" href="#">
-                        <img src="Images/PBG.png" alt="Super Store" class="img-fluid" style="max-width: 10%; height: auto;"></a>
+                            <img src="Images/PBG.png" alt="Python Icon" class="img-fluid">
+                        </a>
                     </li>
+                    <!-- Power BI Button -->
                     <li class="nav-item">
                         <a class="nav-link" id="powerbi-btn" href="#">
-                            <img src="Images/POBG.png" alt="Super Store" class="img-fluid" style="max-width: 10%; height: auto;"></a>
+                            <img src="Images/POBG.png" alt="Power BI Icon" class="img-fluid">
                         </a>
                     </li>
                 </ul>
@@ -53,7 +88,7 @@
             <p>Below are some of my Python-based projects hosted on GitHub:</p>
             <div class="row" id="python-repo-list">
                 <!-- Example Python Project -->
-                <p><a class="nav-link active" href="https://github.com/Kiran-DA/Python.git" title = "Click to go to repository" target="_blank"> Student Records Management System</a></p>
+                <p><a class="nav-link active" href="https://github.com/Kiran-DA/Python.git" title="Click to go to repository" target="_blank"> Student Records Management System</a></p>
                 <p>This project is a simple console-based application for managing student records. It allows users to add student details, display records, calculate average marks, and save records to a CSV file.</p>
             </div>
         </div>
@@ -64,7 +99,7 @@
             <p>Explore my Power BI dashboards and related resources:</p>
             <div class="row" id="powerbi-repo-list">
                 <!-- Example Power BI Project -->
-                <p><a class="nav-link active" href="https://github.com/Kiran-DA/Bi-Dashboard.git" title = "Click to go to repository" target="_blank"> Super Store Dashboard</a></p>
+                <p><a class="nav-link active" href="https://github.com/Kiran-DA/Bi-Dashboard.git" title="Click to go to repository" target="_blank"> Super Store Dashboard</a></p>
                 <p>This dashboard displays insights into sales, profit, and product performance for a fictional superstore using Power BI.</p>
                 <p><img src="Images/Dashboard.png" alt="Super Store" class="img-fluid" style="max-width: 100%; height: auto;"></p>
             </div>
