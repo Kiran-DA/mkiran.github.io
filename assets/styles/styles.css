@@ -26,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000; /* Default text color */
+    color: white; /* Default text color */
     font-weight: bold;
     text-decoration: none;
 }
@@ -59,7 +59,6 @@ body {
 
 /* Hero Section Styling */
 .hero {
-    background-color: #007bff; /* Primary blue background */
     color: white;
     text-align: center;
     padding: 60px 0; /* Padding for top and bottom */
