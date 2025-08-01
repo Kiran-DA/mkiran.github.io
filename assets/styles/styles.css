@@ -96,7 +96,7 @@ body {
 
 .repo-section a:hover {
     text-decoration: underline;
-    color: #0056b3; /* Darker blue on hover */
+    color: #YlOrRd ; /* Yellow-Red on hover */
 }
 
 /* Footer Styling */
